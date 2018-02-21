@@ -187,8 +187,8 @@ void test_sortidos(){
     THEN("Espero que use o barramento e a CPU todo o tempo");
     struct result_io * r;
     r = sim_io(configs, "t7.txt", 0); 
-    isEqual(r->busy, 30228, 1);
-    isEqual(r->cpu_usage, 7228, 1);
+    isEqual(r->busy, 30226, 1);
+    isEqual(r->cpu_usage, 7226, 1);
     PRINT_RESULTS(r);
     PRINT_REQS(r, 9); //9 requests
     CLEANUP(r);
